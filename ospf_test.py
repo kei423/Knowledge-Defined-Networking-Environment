@@ -6,7 +6,7 @@ def ospf_action(env: RoutingEnv) -> np.ndarray:
     # routing based on number of hops
     return np.ones(env.n_edges, dtype=np.float32)
 
-env = RoutingEnv(nodes=14, drop_prob=0.30, max_steps=200)
+env = RoutingEnv(nodes=12, drop_prob=0.10, max_steps=200, traffic_scale=0.9)
 
 obs, _ = env.reset(seed=0)
 ospf_rewards = []

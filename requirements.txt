@@ -1,0 +1,7 @@
+numpy
+torch
+pettingzoo
+gymnasium
+networkx
+logging
+matplotlib
